@@ -1,0 +1,226 @@
+/***** Global idea *********/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ************First Container *******/
+
+#container .box {
+  width: 20rem;
+  height: 100vh;
+  display: inline-block;
+  position: relative;
+  background-color: #999;
+}
+/* #container .box> div{
+    color: #fff;
+    position: absolute;
+} */
+#container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  background-color: #999;
+  position: absolute;
+  width: 100vh;
+  height: 100vw;
+}
+#container-2 {
+  transform: rotate(90deg) translateY(-100vh);
+  white-space: nowrap;
+  transform-origin: top left;
+  font-size: 0;
+}
+/********* main Section *********/
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.img-card p {
+  color: black;
+}
+
+/************Card Sarted********* */
+.card-img {
+  display: flex;
+}
+.img-1 {
+  display: flex;
+}
+.img-2 {
+  display: flex;
+}
+.img-1 img {
+  height: 30px;
+  width: 30px;
+  margin: 5px 0 0 5px;
+  border-radius: 50%;
+}
+.img-2 img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 5px 0 0 0px;
+}
+.img-1 > p {
+  font-size: 9px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 17px 111px 0px 5px;
+}
+.img-2 > p {
+  font-size: 9px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 17px 0 0px 5px;
+}
+
+.card-text > p {
+  font-size: 10px;
+  padding: 10px 0 0 10px;
+  color: rgb(128, 125, 122);
+}
+
+/* ************Card Icons Style **********/
+
+.fa-layer-group {
+  padding: 10px 0 0 10px;
+  color: rgb(155, 152, 150);
+  font-size: 12px;
+}
+.card-text {
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+.fa-clipboard-list {
+  background-color: rgb(217, 221, 224);
+  margin-left: 47px;
+  margin-top: 10px;
+  font-size: 8px;
+  border-radius: 25%;
+  padding: 1px;
+}
+p {
+  margin-bottom: 0px !important;
+}
+
+.bottom img {
+  margin: 8px;
+}
+.del-text {
+  font-size: 12px !important;
+  background-color: rgb(232, 243, 243);
+  margin: 8px 0 12px 5px;
+  border-radius: 50%;
+  padding: 5px 0px 6px 4px;
+}
+.fa-comments {
+  font-weight: bold !important;
+  margin-left: 15px;
+  margin-top: 17px;
+  font-size: 10px;
+  padding: 1px;
+}
+.box {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.fa-comments span {
+  margin-left: 2px;
+}
+.fa-link {
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 17px;
+  font-size: 10px;
+  padding: 1px;
+  cursor: pointer;
+}
+.fa-link span {
+  margin-left: 2px;
+}
+.fa-calendar-days {
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 17px;
+  font-size: 8px;
+  padding: 1px;
+}
+.fa-calendar-days span {
+  margin-left: 2px;
+}
+/* ********Progress Bar *******/
+.progress {
+  display: flex;
+}
+
+
+/* *******scrollbar *********/
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 102, 204);
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+
+/************ File style ********/
+
+.showfilebox {
+  position: relative;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 5px;
+  gap: 5px;
+  font-size: 15px;
+  overflow: hidden;
+  background-color: aliceblue;
+  box-shadow: #000000 0px 0px 0px 1px, #d1d5db3d 0px 0px 0px 1px inset;
+}
+.showfilebox h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+p.filetype {
+  background-color: #18a7ff;
+  color: #fff;
+  padding: 4px;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.right {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  border-radius: 100%;
+  background: #01142181;
+  color: #fff;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
